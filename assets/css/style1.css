@@ -20,15 +20,14 @@ body {
     position: relative;
     top: 25%;
     width: 100%;
-    text-align: center;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .overlay a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #818181;
+    color: #13E8E9;
     display: block;
     transition: 0.3s;
 }
@@ -59,11 +58,6 @@ span.nav{
   vertical-align: middle;
 }
 
-.login, .notification{
-  float: right;
-  margin-left: 50px;
-  font-size: 25px;
-}
 
 #mynav{
   position: absolute;
@@ -71,7 +65,7 @@ span.nav{
   left: 0;
   bottom: 0;
   right: 0;
-  
+
 }
 
 .bar {
@@ -82,5 +76,9 @@ background: -webkit-linear-gradient(top,  #000000 0%,#000000 3%,#000000 100%); /
 background: -o-linear-gradient(top,  #000000 0%,#000000 3%,#000000 100%); /* Opera 11.10+ */
 background: -ms-linear-gradient(top,  #000000 0%,#000000 3%,#000000 100%); /* IE10+ */
 background: linear-gradient(to bottom,  #000000 0%,#000000 3%,#000000 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */ 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+span.fa{
+  font-size: 1.25em;
 }
