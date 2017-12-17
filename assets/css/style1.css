@@ -7,13 +7,15 @@ body {
     height: 0%;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     left: 0;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 0.9);
-    overflow-y: hidden;
-    transition: 0.5s;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    transition: 1s;
 }
 
 .overlay-content {
@@ -24,16 +26,18 @@ body {
 }
 
 .overlay a {
+  text-align: center;
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 2em;
     color: #13E8E9;
     display: block;
-    transition: 0.3s;
+    transition: 0.8s;
 }
 
 .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
+    text-decoration: none;
 }
 
 .overlay .closebtn {
@@ -69,6 +73,8 @@ span.nav{
 }
 
 .bar {
+    height: 7%;
+
  background: #000000; /* Old browsers */
 background: -moz-linear-gradient(top,  #000000 0%, #000000 3%, #000000 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(3%,#000000), color-stop(100%,#000000)); /* Chrome,Safari4+ */
@@ -81,4 +87,38 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 
 span.fa{
   font-size: 1.25em;
+}
+
+hr.style-seven {
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr.style-seven:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+/*scroll bar properties*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(51, 204, 255,0.9); 
 }

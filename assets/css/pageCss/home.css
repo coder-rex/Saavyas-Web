@@ -1,0 +1,6 @@
+.animGif {
+    height: 30%;
+    display: block;
+    display: none;  
+    transition: 3s;
+}
